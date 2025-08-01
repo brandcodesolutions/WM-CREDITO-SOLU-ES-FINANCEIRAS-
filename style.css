@@ -1,14 +1,14 @@
 /* Base Styles */
 :root {
-  --primary-color: #2a4b7c;
-  --secondary-color: #f7931e;
-  --dark-color: #1a2a3a;
+  --primary-color: #c05416;
+  --secondary-color: #c05416;
+  --dark-color: #c05416;
   --light-color: #f8f9fa;
   --gray-color: #6c757d;
   --success-color: #28a745;
-  --danger-color: #dc3545;
+  --danger-color: #c05416;
   --warning-color: #ffc107;
-  --info-color: #17a2b8;
+  --info-color: #c05416;
   --white-color: #ffffff;
   --black-color: #000000;
 }
@@ -70,7 +70,7 @@ img {
 }
 
 .btn-primary:hover {
-  background-color: #1d3a6b;
+  background-color: #c05416;
   transform: translateY(-2px);
 }
 
@@ -207,7 +207,7 @@ img {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/hero-bg.jpg') no-repeat center center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/banner.png') no-repeat center center/cover;
   height: 100vh;
   min-height: 700px;
   display: flex;
