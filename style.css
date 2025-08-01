@@ -581,7 +581,7 @@ input[type="range"]::-webkit-slider-thumb {
 /* CTA Section */
 .cta {
   padding: 100px 0;
-  background: linear-gradient(rgba(42, 75, 124, 0.9), rgba(42, 75, 124, 0.9)), url('../images/cta-bg.jpg') no-repeat center center/cover;
+  background: #a6a6a6;
   color: var(--white-color);
   text-align: center;
 }
