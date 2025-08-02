@@ -417,6 +417,27 @@
                         <button type="submit" class="btn btn-primary btn-block">Enviar mensagem</button>
                     </form>
                 </div>
+
+                <script>
+                    document.getElementById('contactForm').addEventListener('submit', function(e) {
+                        e.preventDefault(); // Evita o envio tradicional do formulário
+                
+                        const nome = document.getElementById('name').value;
+                        const email = document.getElementById('email').value;
+                        const telefone = document.getElementById('phone').value;
+                        const assunto = document.getElementById('subject').value;
+                        const mensagem = document.getElementById('message').value;
+                
+                        const texto = `Olá, meu nome é ${nome}%0AEmail: ${email}%0ATelefone: ${telefone}%0AAssunto: ${assunto}%0AMensagem: ${mensagem}`;
+                
+                        // Substitua abaixo pelo seu número de WhatsApp com DDI (por exemplo: 5541999999999)
+                        const numero = "554192415553";
+                        const url = `https://wa.me/${numero}?text=${texto}`;
+                
+                        window.open(url, '_blank'); // Abre o WhatsApp em nova aba
+                    });
+                </script>
+                
             </div>
         </div>
     </section>
@@ -453,20 +474,13 @@
                 <div class="footer-col">
                     <h4>Links Úteis</h4>
                     <ul>
-                        <li><a href="#">Termos de Uso</a></li>
-                        <li><a href="#">Política de Privacidade</a></li>
-                        <li><a href="#">Trabalhe Conosco</a></li>
+                        <li><a href="termosdeuso.html">Termos de Uso</a></li>
+                        <li><a href="politicaprivacidade.html">Política de Privacidade</a></li>
+                        
                     </ul>
                 </div>
                 
-                <div class="footer-col">
-                    <h4>Newsletter</h4>
-                    <p>Assine nossa newsletter e receba ofertas exclusivas.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Seu email" required>
-                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                </div>
+                
             </div>
             
             <div class="footer-bottom">
